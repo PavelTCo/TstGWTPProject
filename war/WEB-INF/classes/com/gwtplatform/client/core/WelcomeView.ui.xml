@@ -1,0 +1,67 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:a="urn:import:com.google.gwt.dev.asm"
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client" xmlns:u="urn:import:com.gwtplatform.client.core">
+
+	<ui:with field="res" type="com.gwtplatform.client.ResourceBundle" />
+	<ui:with field="messages" type="com.gwtplatform.client.Messages"/>
+	
+	<u:WindowContainer title="{messages.substitutionManagementWindowTitle}" ui:field="windowContainer">
+		<u:windowImage>
+			<g:Image resource="{res.substitutionWindowIcon}" />
+		</u:windowImage>
+		<u:controllPanel>
+			<g:PushButton stylePrimaryName="simpleButton" ui:field="okButton">
+				<g:upFace><div class="buttonBgCenter"><div class="buttonIcon"><ui:text from="{messages.okButtonText}"/></div></div><div class="buttonBgRight"></div></g:upFace>
+				<g:downFace><div class="buttonBgCenter"><div class="buttonIcon"><ui:text from="{messages.okButtonText}"/></div></div><div class="buttonBgRight"></div></g:downFace>
+				<g:upHoveringFace><div class="buttonBgCenter"><div class="buttonIcon"><ui:text from="{messages.okButtonText}"/></div></div><div class="buttonBgRight"></div></g:upHoveringFace> 
+				<g:downHoveringFace><div class="buttonBgCenter"><div class="buttonIcon"><ui:text from="{messages.okButtonText}"/></div></div><div class="buttonBgRight"></div></g:downHoveringFace> 
+				<g:upDisabledFace><div class="buttonBgCenter"><div class="buttonIcon"><ui:text from="{messages.okButtonText}"/></div></div><div class="buttonBgRight"></div></g:upDisabledFace> 
+				<g:downDisabledFace><div class="buttonBgCenter"><div class="buttonIcon"><ui:text from="{messages.okButtonText}"/></div></div><div class="buttonBgRight"></div></g:downDisabledFace>
+			</g:PushButton>
+		</u:controllPanel>
+		<u:contentPanel>
+			<g:TabPanel stylePrimaryName="tabPanel" ui:field="tabPanel">
+				<g:Tab>
+					<g:TabHTML><ui:text from="{messages.myDelegationRulesTabTitle}"/></g:TabHTML>
+					<g:VerticalPanel>
+						<g:Label text="{messages.substitutionManagementLabel}" stylePrimaryName="infoToolBar"/>
+						<g:SimplePanel stylePrimaryName="toolBarWraperPanel">
+							<g:HorizontalPanel stylePrimaryName="toolBarPanel">
+								<g:PushButton ui:field="createButton" stylePrimaryName="createButton">
+									<g:upFace><ui:text from="{messages.createButtonText}"/></g:upFace>
+									<g:downFace><ui:text from="{messages.createButtonText}"/></g:downFace>
+									<g:upHoveringFace><ui:text from="{messages.createButtonText}"/></g:upHoveringFace> 
+									<g:downHoveringFace><ui:text from="{messages.createButtonText}"/></g:downHoveringFace> 
+									<g:upDisabledFace><ui:text from="{messages.createButtonText}"/></g:upDisabledFace> 
+									<g:downDisabledFace><ui:text from="{messages.createButtonText}"/></g:downDisabledFace>
+								</g:PushButton>
+								<g:PushButton ui:field="updateButton" enabled="false" stylePrimaryName="updateButton">
+									<g:upFace><ui:text from="{messages.updateButtonText}"/></g:upFace>
+									<g:downFace><ui:text from="{messages.updateButtonText}"/></g:downFace>
+									<g:upHoveringFace><ui:text from="{messages.updateButtonText}"/></g:upHoveringFace> 
+									<g:downHoveringFace><ui:text from="{messages.updateButtonText}"/></g:downHoveringFace> 
+									<g:upDisabledFace><ui:text from="{messages.updateButtonText}"/></g:upDisabledFace> 
+									<g:downDisabledFace><ui:text from="{messages.updateButtonText}"/></g:downDisabledFace>
+								</g:PushButton>
+								<g:PushButton ui:field="deleteButton" enabled="false" stylePrimaryName="deleteButton">
+									<g:upFace><ui:text from="{messages.deleteButtonText}"/></g:upFace>
+									<g:downFace><ui:text from="{messages.deleteButtonText}"/></g:downFace>
+									<g:upHoveringFace><ui:text from="{messages.deleteButtonText}"/></g:upHoveringFace> 
+									<g:downHoveringFace><ui:text from="{messages.deleteButtonText}"/></g:downHoveringFace> 
+									<g:upDisabledFace><ui:text from="{messages.deleteButtonText}"/></g:upDisabledFace> 
+									<g:downDisabledFace><ui:text from="{messages.deleteButtonText}"/></g:downDisabledFace>
+								</g:PushButton>
+							</g:HorizontalPanel>
+						</g:SimplePanel>
+						<p1:CellTable ui:field="table" width="100%" />
+					</g:VerticalPanel>
+				</g:Tab>
+				<g:Tab>
+					<g:TabHTML><ui:text from="{messages.meAsDelegateTabTitle}"/></g:TabHTML>
+					<g:Label text="{messages.notDefined}"/>
+				</g:Tab>
+			</g:TabPanel>
+		</u:contentPanel>
+	</u:WindowContainer>
+</ui:UiBinder> 

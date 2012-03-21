@@ -1,0 +1,93 @@
+/* Incremental changes from CellTable.css */ 
+.cellTableFooter {
+  padding: 3px 9px;
+}
+
+@url tableHeaderBackgroundUrl tableHeaderBackground;
+
+.cellTableHeader, .cellTableLastColumnHeader{
+  color: #000000;
+  font: 10px Arial,Helvetica,sans-serif;
+  border-bottom: 1px solid #D0D0D0;
+  border-right: 1px solid #D0D0D0;
+  padding: 0 7px 0 7px;
+  vertical-align: middle;
+  height: 21px;
+  
+  text-align: left;
+  text-shadow: none;
+  overflow: hidden;
+  background: tableHeaderBackgroundUrl repeat-x scroll 0 0 transparent;
+
+}
+
+.cellTableFirstColumnHeader {
+  	border-right: 1px solid #D0D0D0;
+    padding: 0;
+    width: 21px;
+}
+
+.cellTableLastColumn {
+	
+}
+
+@url firstColumnBackgroundUrl firstColumnBackground;
+.cellTableFirstColumn{
+	background: firstColumnBackgroundUrl repeat-y scroll 0 0 transparent;
+	padding: 0 !important;
+	border-right: 1px solid #D0D0D0 !important;
+}
+
+
+
+.cellTableSortableHeader:hover {
+  color: #000000;
+}
+
+.cellTableCell {
+  padding: 0 0 0 7px;
+  border:none;
+  border-bottom: 1px solid #D0D0D0;
+  font: 10px Arial,Helvetica,sans-serif;
+}
+
+.cellTableFirstColumnFooter {
+  border: 0px;
+  padding: 0px;
+}
+
+
+
+.cellTableSelectedRow {
+  background-color: #DFE8F6 !important;
+  background-image:none;
+  color: #000;
+  height: auto;
+  overflow: auto;
+}
+
+.cellTableKeyboardSelectedRow {
+  background-color: #fff;
+}
+
+.cellTableLastColumnFooter {
+  border: 0px;
+  padding: 0px;
+}
+
+.cellTableEvenRow {
+  cursor: hand;
+  cursor: pointer;
+}
+
+.cellTableOddRow {
+  cursor: hand;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.cellTableHoveredRow {
+  background-color: #fff;
+  height: auto;
+  overflow: auto;
+}

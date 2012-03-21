@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gin-1.5-post-gwt-2.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwtp-all-0.6.jar" sourcepath="C:/Documents and Settings/TiCemochka/.m2/repository/com/gwtplatform/gwtp-all/0.6/gwtp-all-0.6-sources.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/aopalliance.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guice-assistedinject-3.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guice-servlet-3.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/javax.inject.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/TiCemochka/.m2/repository/com/google/gwt/gwt-servlet/2.4.0/gwt-servlet-2.4.0.jar">
+		<attributes>
+			<attribute name="maven.groupId" value="com.google.gwt"/>
+			<attribute name="maven.artifactId" value="gwt-servlet"/>
+			<attribute name="maven.version" value="2.4.0"/>
+			<attribute name="maven.scope" value="runtime"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

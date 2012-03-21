@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'
+	ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+<ui:with type="com.gwtplatform.client.place.NameTokens" field="nameTokens"></ui:with>
+<ui:with field="res" type="com.gwtplatform.client.ResourceBundle" />
+	<ui:with field="messages" type="com.gwtplatform.client.Messages"/>
+  <g:HTMLPanel styleName="navbar">
+    <g:InlineHyperlink targetHistoryToken="{nameTokens.getWelcome}">Editory</g:InlineHyperlink> 
+    <g:InlineHyperlink targetHistoryToken="{nameTokens.getHomepage}">Home to</g:InlineHyperlink>
+    <g:InlineHyperlink targetHistoryToken="{nameTokens.getContacts}">Contacts</g:InlineHyperlink>
+    
+  </g:HTMLPanel>
+
+</ui:UiBinder>

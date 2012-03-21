@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<g:DecoratorPanel stylePrimaryName="windowDecoratorPanel">
+		<g:VerticalPanel stylePrimaryName="windowPanel">
+			<g:HorizontalPanel stylePrimaryName="windowHeaderPanel">
+				<g:SimplePanel ui:field="windowIconPanel" stylePrimaryName="windowIconPanel" />
+				<g:Label ui:field="titleLbl" stylePrimaryName="windowTitleLable"/>
+				<g:PushButton ui:field="closeBtn" stylePrimaryName="windowCloseButton">
+				</g:PushButton>
+			</g:HorizontalPanel>
+			<g:SimplePanel ui:field="contentPanel"
+				stylePrimaryName="windowContentPanel" />
+			<g:HorizontalPanel ui:field="controlPanel"
+				stylePrimaryName="windowControlPanel" />
+		</g:VerticalPanel>
+	</g:DecoratorPanel>
+</ui:UiBinder> 
